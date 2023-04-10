@@ -8,7 +8,7 @@ void setup() {
  
 void loop() {
   temp = analogRead(sensorLM35); 
-  // Calculamos la temperatura con la fórmula
+  // Calculamos la temperatura con la siguiente fórmula
   temp = (5.0 * temp * 100.0)/1024.0; 
   Serial.println(temp);
   delay(1000);
